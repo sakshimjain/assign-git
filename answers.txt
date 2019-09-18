@@ -1,0 +1,53 @@
+• What is a gitignore file and what should it include for a Java project?
+-->  
+
+It is a text file that tells Git which files or folders to ignore in a project. 
+
+Following are .gitignore files in my project
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+ virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+
+• What does fast-forward in Git mean?
+-->
+In Git, to "fast forward" means to update the HEAD pointer such that its new value is a direct descendant of the previous value.
+If Master has not diverged, instead of creating a new commit, git will just point master to the latest commit of the feature branch. There won't be any "merge commit" in fast-forwarding merge.
+
+• Why should you have different branches?
+-->  We can do or perform different tasks on different branches. If anyone one branch gets buggy, project and other work is not affected.
+
+• In a project how many remote Git repositories do you usually have?
+ Multiple remote repositories can be used but only one origin exists.
